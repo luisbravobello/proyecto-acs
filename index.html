@@ -6,7 +6,370 @@
   <title>Administración de la Configuración del Software</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-  <!-- El equipo desarrollará el contenido de ACS en sus respectivas ramas. -->
+<body id="inicio">
+  <header class="barra-navegacion">
+    <nav aria-label="Secciones del trabajo">
+      <a class="logo" href="#inicio" aria-label="ACS, inicio">ACS.</a>
+      <div class="nav-secciones">
+        <a href="#introduccion"><span>01</span> Introducción e identificación</a>
+        <a href="#versiones"><span>02</span> Versión y cambio</a>
+        <a href="#auditoria"><span>03</span> Auditoría y reporte</a>
+      </div>
+    </nav>
+  </header>
+
+    <div class="portada">
+      <div>
+        <span>INGENIERÍA DE SOFTWARE · ACTIVIDAD ACADÉMICA</span>
+        <h1>Administración de la<br>Configuración <em>del Software.</em></h1>
+        <p>
+          Una forma de organizar los productos de un proyecto,
+          comprender sus relaciones y administrar su evolución.
+        </p>
+        <a class="boton" href="#introduccion">Explorar el contenido</a>
+      </div>
+
+      <aside class="configuracion" aria-label="Productos que administra la ACS">
+        <dl>
+          <div><dt><span class="producto-icono objetivo-icono icono-requisitos" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></span>Requisitos</dt><dd>Definen el comportamiento esperado.</dd></div>
+          <div><dt><span class="producto-icono objetivo-icono icono-codigo" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 4l-4 16"/></svg></span>Código</dt><dd>Implementa las funciones del sistema.</dd></div>
+          <div><dt><span class="producto-icono objetivo-icono icono-pruebas" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></svg></span>Pruebas</dt><dd>Verifican el cumplimiento de los requisitos.</dd></div>
+        </dl>
+      </aside>
+    </div>
+
+  <main>
+    <section id="introduccion">
+      <span>01 · LUIS ALEJANDRO BRAVO BELLO</span>
+      <h2>Introducción e identificación</h2>
+
+      <p>
+        Durante el desarrollo de software cambian los requisitos,
+        documentos, modelos, código y pruebas. La Administración de
+        la Configuración del Software (ACS) organiza estos productos
+        y sus modificaciones para mantener la coherencia del proyecto.
+      </p>
+
+      <p>
+        Sin esta coordinación, un equipo podría utilizar código actualizado
+        junto con requisitos o pruebas que ya no corresponden a su
+        comportamiento. La ACS ayuda a reconocer qué elementos forman
+        una entrega y cuáles deben revisarse cuando ocurre un cambio.
+      </p>
+
+      <div class="objetivos">
+  <h3>Los cuatro objetivos de ACS</h3>
+
+  <ul class="objetivos-lista">
+    <li>
+      <span class="objetivo-icono icono-identificacion" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <circle cx="10" cy="10" r="6"/>
+          <path d="m15 15 5 5"/>
+        </svg>
+      </span>
+      <div>
+        <h4>Identificar los elementos</h4>
+        <p>Reconocer y nombrar los productos que forman la configuración del software.</p>
+      </div>
+    </li>
+
+    <li>
+      <span class="objetivo-icono icono-cambio" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M4 8h16m-4-4 4 4-4 4M20 16H4m4-4-4 4 4 4"/>
+        </svg>
+      </span>
+      <div>
+        <h4>Administrar los cambios</h4>
+        <p>Organizar las modificaciones y considerar sus efectos sobre otros productos.</p>
+      </div>
+    </li>
+
+    <li>
+      <span class="objetivo-icono icono-version" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="m12 3 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5"/>
+        </svg>
+      </span>
+      <div>
+        <h4>Construir distintas versiones</h4>
+        <p>Reunir los elementos y versiones adecuados para cada entrega del sistema.</p>
+      </div>
+    </li>
+
+    <li>
+      <span class="objetivo-icono icono-calidad" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/>
+          <path d="m8 12 3 3 5-6"/>
+        </svg>
+      </span>
+      <div>
+        <h4>Conservar la calidad</h4>
+        <p>Mantener la consistencia y el funcionamiento esperado mientras el software evoluciona.</p>
+      </div>
+    </li>
+  </ul>
+</div>
+
+      <div class="bloque-proceso">
+      <div class="proceso-presentacion"><span>EL PROCESO ACS</span><h3>Las cinco tareas<br>del proceso</h3><p>Del reconocimiento de un elemento al registro de sus cambios: cada tarea aporta una forma de conservar el orden.</p></div>
+
+      <ol class="procesos">
+        <li>
+          <span class="proceso-icono icono-identificacion" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 21s7-6 7-12a7 7 0 0 0-14 0c0 6 7 12 7 12Z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+          </span>
+          <div>
+            <h4>Identificación</h4>
+            <p>
+              Nombrar, describir y organizar los elementos
+              y sus relaciones.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="proceso-icono icono-version" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <circle cx="6" cy="5" r="2"/>
+              <circle cx="6" cy="19" r="2"/>
+              <circle cx="18" cy="5" r="2"/>
+              <path d="M6 7v10m12-10v3c0 4-12 1-12 7"/>
+            </svg>
+          </span>
+          <div>
+            <h4>Control de versión</h4>
+            <p>
+              Administrar las versiones de los productos
+              que componen el sistema.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="proceso-icono icono-cambio" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="m4 20 4-1L20 7l-3-3L5 16l-1 4Zm10-13 3 3"/>
+            </svg>
+          </span>
+          <div>
+            <h4>Control de cambio</h4>
+            <p>
+              Evaluar, autorizar y dar seguimiento
+              a las modificaciones.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="proceso-icono icono-calidad" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6l-8-3Z"/>
+              <path d="m8 12 3 3 5-6"/>
+            </svg>
+          </span>
+          <div>
+            <h4>Auditoría de configuración</h4>
+            <p>
+              Verificar que lo realizado corresponde a lo aprobado
+              y cumple los procedimientos establecidos.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span class="proceso-icono icono-reporte" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M5 21V4h14l-3 4 3 4H5"/>
+            </svg>
+          </span>
+          <div>
+            <h4>Reporte de estado</h4>
+            <p>
+              Registrar y comunicar la situación
+              de los elementos y sus cambios.
+            </p>
+          </div>
+        </li>
+      </ol>
+
+      <p>
+        Estas tareas se complementan durante la vida de cada elemento.
+        No representan una secuencia rígida: un objeto nuevo necesita
+        identificación, pero si no recibe solicitudes de modificación,
+        el control de cambio puede no aplicarse en ese momento.
+      </p>
+      </div>
+
+      <h3>Ítems y objetos de configuración</h3>
+
+      <p>
+        Un <strong>ítem de configuración del software (ICS)</strong>
+        es un producto de trabajo, o una parte de él, que se identifica
+        y administra dentro del proyecto. Puede ser un requisito,
+        un modelo de diseño, un componente o un conjunto de pruebas.
+      </p>
+
+      <div class="tarjetas">
+        <article>
+          <h4>Objeto básico</h4>
+          <p>
+            Una unidad de información creada durante el análisis,
+            diseño, código o pruebas. Por ejemplo, un requisito
+            específico o el código de un componente.
+          </p>
+        </article>
+
+        <article>
+          <h4>Objeto agregado</h4>
+          <p>
+            Una colección identificada de objetos básicos y otros
+            agregados. Una especificación de diseño puede reunir
+            modelos de datos, arquitectura y componentes.
+          </p>
+        </article>
+      </div>
+
+      <h3>Características de cada objeto</h3>
+
+      <ul class="caracteristicas">
+        <li>
+          <strong>Nombre:</strong>
+          lo identifica sin ambigüedad.
+        </li>
+        <li>
+          <strong>Descripción:</strong>
+          indica su tipo, proyecto e información de versión o cambio.
+        </li>
+        <li>
+          <strong>Recursos:</strong>
+          entidades que utiliza, procesa o referencia,
+          como funciones, variables y tipos de datos.
+        </li>
+        <li>
+          <strong>Realización:</strong>
+          referencia a la unidad de texto de un objeto básico.
+          En un agregado es nula.
+        </li>
+      </ul>
+
+      <div class="lectura-doble">
+      <article>
+      <h3>Relaciones e impacto de los cambios</h3>
+
+      <p>
+        Una relación <strong>«parte de»</strong> establece una jerarquía:
+        un requisito pertenece a una especificación de requisitos.
+        Las <strong>interrelaciones</strong> conectan objetos de distintas
+        partes del proyecto, como ese requisito, el código que lo
+        implementa y las pruebas que lo verifican.
+      </p>
+
+      <p>
+        Mantener estas relaciones permite reconocer qué otros productos
+        podrían verse afectados por una modificación y necesitan revisión.
+      </p>
+
+      </article>
+      <article>
+      <h3>Línea de referencia</h3>
+
+      <p>
+        Es un producto o conjunto de productos revisados y aprobados
+        que sirve como base para continuar el desarrollo. Antes de
+        establecerla, los objetos pueden cambiar con mayor libertad;
+        después, sus modificaciones siguen el procedimiento de
+        control de cambio establecido.
+      </p>
+
+      <p>
+        La línea de referencia no impide que el software evolucione.
+        Proporciona una base conocida para evaluar las modificaciones.
+        Un commit puede señalar esa base, pero por sí solo no demuestra
+        que haya sido revisada y aprobada.
+      </p>
+
+      </article>
+      </div>
+
+      <h3 id="ejemplo-biblioteca">Ejemplo: préstamos de biblioteca</h3>
+
+      <div class="ejemplo">
+        <p><strong>REQ-01 · Requisito:</strong> cada estudiante puede tener hasta tres préstamos activos.</p>
+        <p><strong>COD-Prestamos · Código:</strong> permite un nuevo préstamo si <code>prestamosActivos &lt; 3</code>.</p>
+        <p><strong>PRU-Prestamos · Pruebas:</strong> con dos préstamos permite otro; con tres lo rechaza.</p>
+        <p>Si el límite cambia a cinco, se actualizan el requisito, el código y las pruebas.</p>
+      </div>
+    </section>
+
+    <section id="versiones">
+      <span>02 · ANDREA VALECILLOS</span>
+      <h2>Control de versión y cambio</h2>
+      <!-- Andrea incorporará aquí su contenido. -->
+    </section>
+
+    <section id="auditoria">
+      <span>03 · DUBENNY ARECHE</span>
+      <h2>Auditoría y reporte de estado</h2>
+      <!-- Dubenny incorporará aquí su contenido y la conclusión del trabajo. -->
+    </section>
+
+    <section class="bibliografia">
+      <div class="referencia-texto">
+      <h2>Referencia bibliográfica</h2>
+      <p>
+        Pressman, R. S. (2010).
+        <cite>Ingeniería del software: Un enfoque práctico</cite>
+        (7.ª ed.). McGraw-Hill Interamericana Editores.
+      </p>
+      <small>
+        Introducción e identificación: pp. 508–510.
+        Línea de referencia: p. 504.
+      </small>
+      </div>
+      <figure class="portada-libro">
+        <img src="img/pressman-portada.png" width="751" height="900" alt="Portada de Ingeniería del software: Un enfoque práctico, séptima edición, de Roger S. Pressman" loading="lazy" decoding="async">
+        <figcaption>Ingeniería del software: Un enfoque práctico · Roger S. Pressman · 7.ª edición</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="pie-contenido">
+      <div class="pie-proyecto">
+        <a class="logo" href="#inicio" aria-label="Volver al inicio">ACS.</a>
+        <p>Administración de la Configuración del Software</p>
+        <small>Actividad académica · Ingeniería de Software</small>
+      <a class="github-enlace" href="https://github.com/luisbravobello/proyecto-acs">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M12 .75a11.25 11.25 0 0 0-3.558 21.922c.563.104.768-.244.768-.542 0-.267-.01-.975-.015-1.913-3.13.68-3.79-1.508-3.79-1.508-.512-1.3-1.25-1.646-1.25-1.646-1.023-.7.077-.686.077-.686 1.131.08 1.727 1.161 1.727 1.161 1.005 1.723 2.637 1.225 3.28.937.103-.728.394-1.225.715-1.507-2.498-.284-5.124-1.249-5.124-5.563 0-1.23.44-2.233 1.16-3.02-.116-.285-.503-1.43.11-2.98 0 0 .944-.302 3.094 1.154A10.78 10.78 0 0 1 12 6.181c.956.005 1.919.129 2.818.379 2.148-1.456 3.09-1.154 3.09-1.154.615 1.55.229 2.695.113 2.98.722.787 1.158 1.79 1.158 3.02 0 4.325-2.63 5.275-5.135 5.553.404.35.765 1.042.765 2.1 0 1.517-.014 2.741-.014 3.113 0 .3.203.65.774.54A11.252 11.252 0 0 0 12 .75Z"/>
+        </svg>
+        Ver proyecto en GitHub
+      </a>
+      </div>
+      <div class="pie-secciones" role="navigation" aria-label="Secciones en el pie de página">
+        <h2>Secciones</h2>
+        <ul>
+          <li><a href="#introduccion">Introducción e identificación</a></li>
+          <li><a href="#versiones">Versión y cambio</a></li>
+          <li><a href="#auditoria">Auditoría y reporte</a></li>
+        </ul>
+      </div>
+      <div class="pie-equipo">
+        <h2>Integrantes</h2>
+        <ul>
+          <li>Luis Alejandro Bravo Bello</li>
+          <li>Andrea Valecillos</li>
+          <li>Dubenny Areche</li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
 </body>
 </html>
