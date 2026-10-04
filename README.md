@@ -54,7 +54,7 @@ El resumen tendrá al menos una página de contenido y estará redactado con pal
 - Git y GitHub para el control de versiones y el trabajo colaborativo.
 - GitHub Pages para publicar la página.
 
-## Estructura inicial
+## Estructura del proyecto
 
 ```text
 proyecto-acs/
@@ -64,7 +64,7 @@ proyecto-acs/
     └── style.css
 ```
 
-`index.html` contiene la base del documento y el enlace a la hoja de estilos. `assets/style.css` se deja vacío para desarrollar el diseño durante el trabajo del equipo.
+`index.html` contiene la sección de introducción e identificación de Luis, su ejemplo de biblioteca y los espacios reservados para Andrea y Dubenny. `assets/style.css` contiene el diseño compartido y la adaptación a computadora y celular. Andrea y Dubenny desarrollarán e incorporarán sus propios apartados en sus ramas.
 
 ## Cómo trabajaremos
 
@@ -79,7 +79,7 @@ Ramas sugeridas: `introduccion-identificacion`, `versiones-cambios` y `auditoria
 
 ## Cómo visualizar el proyecto
 
-Descargar o clonar el repositorio y abrir `index.html` en un navegador. La estructura inicial aún no contiene el resumen; el equipo incorporará el contenido y el diseño en sus ramas.
+Descargar o clonar el repositorio y abrir `index.html` en un navegador. La navegación enlaza las secciones `#introduccion`, `#versiones` y `#auditoria`. El ejemplo de biblioteca es ilustrativo. Las secciones de Andrea y Dubenny están pendientes de sus aportes.
 
 ## Publicación
 
@@ -102,5 +102,5 @@ Repositorio de GitHub, página publicada en GitHub Pages y README completo.
 
 - Consigna: *Tarea ASC Control de Version.docx*.
 - Extracto de Pressman: *Resumen par manana scm.pdf*, sección 22.3, páginas 508 a 515.
-- La referencia bibliográfica completa del libro se añadirá usando los datos de la edición utilizada.
+- Pressman, R. S. (2010). *Ingeniería del software: Un enfoque práctico* (7.ª ed.). McGraw-Hill Interamericana Editores. Sección 22.3, pp. 508–515; línea de referencia, p. 504.
 
