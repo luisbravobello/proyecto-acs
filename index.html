@@ -307,11 +307,134 @@
       </div>
     </section>
 
-    <section id="versiones">
+
+  <section id="versiones">
       <span>02 · ANDREA VALECILLOS</span>
       <h2>Control de versión y cambio</h2>
-      <!-- Andrea incorporará aquí su contenido. -->
+
+      <p>
+        A medida que un sistema de software evoluciona, se generan múltiples versiones de sus componentes. 
+        El <strong>control de versión</strong> combina procedimientos y herramientas para administrar estos objetos de manera ordenada, 
+        evitando el caos que producen las modificaciones simultáneas y descontroladas.
+      </p>
+
+      <h3>Capacidades de un sistema de control de versión</h3>
+      <p>Un sistema robusto integra o se conecta directamente con cuatro funciones fundamentales:</p>
+      
+      <ul class="caracteristicas">
+        <li>
+          <strong>Base de datos del proyecto (repositorio):</strong>
+          Almacena de forma centralizada todos los objetos de configuración relevantes.
+        </li>
+        <li>
+          <strong>Administración de versiones:</strong>
+          Almacena todas las versiones de un objeto o permite reconstruir cualquier versión utilizando las diferencias respecto a las pasadas.
+        </li>
+        <li>
+          <strong>Facilidad de elaboración:</strong>
+          Permite recopilar los objetos de configuración correctos para construir una versión específica del software.
+        </li>
+        <li>
+          <strong>Rastreador de conflictos (o de errores):</strong>
+          Facilita al equipo registrar y seguir el estado de los conflictos e inconvenientes asociados con cada objeto.
+        </li>
+      </ul>
+
+      <h3>Conjuntos de cambios y modelo del sistema</h3>
+      <p>
+        Algunos sistemas utilizan un <strong>conjunto de cambios</strong> (*change set*), que recopila todas las modificaciones realizadas 
+        en relación con una configuración de referencia para crear una versión específica. Este concepto captura los archivos modificados, 
+        la razón del cambio, quién lo hizo y cuándo.
+      </p>
+      <p>
+        Para aplicar estos conjuntos de manera estructurada se emplea un <strong>modelo del sistema</strong>, el cual contiene una plantilla 
+        con la jerarquía de componentes y el orden de construcción, las reglas de construcción y las reglas de verificación.
+      </p>
+
+      <div class="ejemplo">
+        <h4>Herramienta de referencia: El Sistema de Versiones Concurrentes (SVC / CVS)</h4>
+        <p>
+          Diseñado originalmente para código fuente pero útil para archivos de texto, el <strong>SVC</strong> establece un repositorio simple 
+          y almacena versiones sucesivas guardando únicamente las diferencias (*deltas*) entre archivos.
+        </p>
+        <p>
+          Para proteger el trabajo en equipo, el SVC aísla a los desarrolladores asignando directorios separados y 
+          <strong>mezcla automáticamente los cambios</strong> al completar cada tarea. 
+          <em>Nota importante:</em> El SVC no es un sistema de construcción ni implementa por sí solo un proceso formal de control de cambios; 
+          necesita integrarse con herramientas externas como <code>Makefile</code>.
+        </p>
+      </div>
+
+      <h3>Control de cambio</h3>
+      <p>
+        El control de cambio representa un acto de equilibrio constante: 
+        demasiada burocracia desalienta el trabajo creativo y enlentece el progreso, mientras que la falta de control conduce rápidamente al caos y a fallas críticas en el producto.
+      </p>
+
+      <p>
+        Para proyectos grandes y visibles, se combinan procedimientos humanos y herramientas automatizadas siguiendo un flujo riguroso:
+      </p>
+
+      <ol>
+        <li>
+          <div>
+            <h4>Petición y Evaluación</h4>
+            <p>Se reconoce la necesidad del cambio y el usuario envía una petición. El desarrollador la evalúa considerando su mérito técnico, efectos colaterales e impacto global.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h4>Reporte y Decisión (ACC)</h4>
+            <p>Los resultados se documentan en un <em>reporte de cambio</em>. La <strong>Autoridad de Control de Cambio (ACC)</strong> (que puede ser el gerente o un comité multidisciplinario) decide si se aprueba, se rechaza o se pone en fila.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h4>Orden de Cambio de Ingeniería (OCI)</h4>
+            <p>Si se aprueba, se genera una OCI que detalla el cambio a realizar, restricciones y criterios de revisión.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h4>Implementación y Sincronización</h4>
+            <p>Se asigna a los desarrolladores, se extraen los objetos y se efectúan los cambios aplicando <strong>control de acceso</strong> (qué ingenieros pueden modificar un objeto) y <strong>control de sincronización</strong> (para evitar que cambios paralelos se sobrescriban).</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h4>Verificación y Distribución</h4>
+            <p>Se audita el cambio, se restablece la línea de referencia para pruebas, se promueve la inclusión en la nueva versión del software y se distribuye.</p>
+          </div>
+        </li>
+      </ol>
+
+      <h3>Niveles de control de cambio</h3>
+      <div class="tarjetas">
+        <article>
+          <h4>Control informal</h4>
+          <p>Se aplica antes de que un objeto alcance una línea de referencia. El desarrollador realiza cambios justificados siempre que no afecten el sistema global.</p>
+        </article>
+        <article>
+          <h4>Control a nivel de proyecto</h4>
+          <p>Se activa tras establecer una línea de referencia inicial. Requiere la aprobación del gerente de proyecto para cambios locales o de la ACC si impacta otros componentes.</p>
+        </article>
+        <article>
+          <h4>Control formal</h4>
+          <p>Se instituye cuando el software ya ha sido liberado a los clientes, siguiendo estrictamente el proceso completo de peticiones, reportes y OCI.</p>
+        </article>
+      </div>
+
+      <div class="ejemplo">
+        <h3>Ejemplo práctico de control de cambios en el equipo</h3>
+        <p>
+          <strong>Situación:</strong> Durante el desarrollo de la página web del proyecto, el equipo detecta la necesidad de modificar los estilos CSS globales para mejorar la visualización en teléfonos móviles.
+        </p>
+        <p>
+          <strong>Aplicación del proceso:</strong> Andrea redacta la petición de cambio, la somete a revisión con el equipo (actuando como ACC de nivel de proyecto), genera una OCI interna para modificar exclusivamente el archivo <code>assets/style.css</code> en su rama de trabajo, realiza una auditoría técnica del resultado y efectúa el <em>merge</em> hacia la rama principal sin afectar los contenidos de HTML creados por Luis y Dubenny.
+        </p>
+      </div>
     </section>
+
 
     <section id="auditoria">
       <span>03 · DUBENNY ARECHE</span>
