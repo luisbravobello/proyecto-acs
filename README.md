@@ -1,59 +1,45 @@
 # Administración de la Configuración del Software
 
-Proyecto académico en equipo para explicar la Administración de la Configuración del Software (ACS) y aplicar sus principios mediante Git y GitHub.
+Página web académica que resume el proceso de Administración de la Configuración del Software (ACS) y documenta el trabajo colaborativo del equipo mediante Git y GitHub.
 
 ## Objetivo
 
-Elaborar un resumen completo, redactado con nuestras propias palabras, de la sección 22.3 de *Ingeniería de software* de Roger S. Pressman. El resumen se presentará en una página web publicada en GitHub Pages. La consigna identifica esta sección como 2.3; en el material proporcionado aparece como 22.3, páginas 508 a 515.
+Explicar con palabras propias los conceptos de la sección 22.3 de *Ingeniería del software: Un enfoque práctico*, de Roger S. Pressman, y aplicar el control de versiones mediante ramas, commits y Pull Requests. La consigna menciona la sección 2.3; en la edición utilizada corresponde a la sección 22.3, páginas impresas 508–515.
 
-## Integrantes y asignaciones
+## Integrantes y participación
 
-### Luis Alejandro Bravo Bello
+| Integrante | Responsabilidad | Estado en la página |
+|---|---|---|
+| Luis Alejandro Bravo Bello | Introducción, cuatro objetivos, cinco tareas, identificación de ítems y objetos, características, relaciones, línea de referencia y ejemplo con requisitos, código y pruebas. Estructura HTML, navegación y funcionalidades JavaScript. | Contenido y funcionalidades incorporados. |
+| Andrea Valecillos | Repositorio, versiones, construcción, rastreo de errores, conjuntos de cambios, modelo del sistema y SVC/CVS. Control de cambio, ACC, OCI, acceso, sincronización, niveles de control, ejemplo y estilos CSS. | Contenido, ejemplo y estilos incorporados. Diagrama del proceso pendiente. |
+| Dubenny Areche | Revisión técnica y auditoría, seis preguntas de auditoría, reporte de estado y ejemplo. Conclusión, revisión final del README y publicación en GitHub Pages. | Apartado reservado; contenido y conclusión pendientes. |
 
-- Redactar la introducción y explicar los cuatro objetivos y las cinco tareas de ACS.
-- Desarrollar la identificación de los ítems de configuración, los objetos básicos y agregados, sus características, relaciones y la línea de referencia.
-- Incluir un ejemplo con requisitos, código y pruebas.
-- Preparar la estructura de `index.html` y la navegación.
-- Lectura: desde 22.3 en la página 508 hasta antes de 22.3.2 en la página 510.
+Lecturas asignadas: Luis, desde 22.3 hasta antes de 22.3.2 (pp. 508–510); Andrea, 22.3.2 y 22.3.3 (pp. 510–513); Dubenny, 22.3.4 y 22.3.5 (pp. 514–515).
 
-### Andrea Valecillos
+## Contenido y navegación
 
-- Explicar el repositorio, la administración y construcción de versiones y el rastreo de errores.
-- Desarrollar los conjuntos de cambios, el modelo del sistema y el ejemplo de SVC/CVS del libro.
-- Explicar el proceso de control de cambio, la ACC, la OCI, el control de acceso, la sincronización y los niveles de control.
-- Incluir un diagrama y un ejemplo del proceso.
-- Incorporar su contenido en la página y desarrollar los estilos en `assets/style.css`.
-- Lectura: apartados 22.3.2 y 22.3.3, páginas 510 a 513.
+- **Introducción e identificación:** `#introduccion`.
+- **Control de versión y cambio:** `#versiones`.
+- **Auditoría y reporte de estado:** `#auditoria`.
+- Referencia bibliográfica con la portada del libro.
+- Footer con enlaces a las secciones, integrantes y repositorio.
 
-### Dubenny Areche
+El ejemplo de biblioteca relaciona un requisito, su implementación y las pruebas que verifican el límite de préstamos. Los ejemplos de la página son ilustrativos.
 
-- Diferenciar revisión técnica y auditoría de configuración, y resumir las seis preguntas de auditoría.
-- Explicar el reporte de estado e incluir un ejemplo con los cambios del equipo.
-- Incorporar sus apartados, la conclusión y la referencia bibliográfica.
-- Completar este README y configurar GitHub Pages después de integrar las partes.
-- Lectura: apartados 22.3.4 y 22.3.5, páginas 514 y 515.
+## Funcionalidades JavaScript
 
-## Contenido que tendrá la página
+El archivo `Js/script.js`, cargado desde `index.html`, implementa:
 
-1. Título e introducción.
-2. Objetivos y tareas del proceso ACS.
-3. Identificación de objetos de configuración.
-4. Control de versión.
-5. Control de cambio.
-6. Auditoría de configuración.
-7. Reporte de estado.
-8. Ejemplos y recursos visuales o interactivos.
-9. Conclusión y referencia bibliográfica.
+- Menú de hamburguesa en pantallas de hasta 900 px.
+- Cierre del menú al seleccionar una sección, pulsar Escape o interactuar fuera de la navegación.
+- Ajuste del menú al cambiar entre pantalla móvil y escritorio.
+- Indicador de la sección activa mientras se recorre la página.
 
-El resumen tendrá al menos una página de contenido y estará redactado con palabras propias.
+La navegación permanece visible al desplazarse. Los estilos incluyen adaptación a computadora y celular, iconos por color y respeto a la preferencia de movimiento reducido.
 
 ## Tecnologías
 
-- HTML para la estructura y el contenido.
-- CSS para el diseño.
-- JavaScript para el menú móvil y la sección activa.
-- Git y GitHub para el control de versiones y el trabajo colaborativo.
-- GitHub Pages para publicar la página.
+HTML, CSS y JavaScript para la página; Git y GitHub para el historial y la colaboración; GitHub Pages para la publicación prevista. No requiere instalar dependencias ni compilar.
 
 ## Estructura del proyecto
 
@@ -69,43 +55,42 @@ proyecto-acs/
     └── pressman-portada.png
 ```
 
-`index.html` contiene la introducción e identificación de Luis, el contenido de Andrea y el espacio reservado para Dubenny. `assets/style.css` contiene el diseño compartido y la adaptación a computadora y celular. `Js/script.js` implementa el menú móvil y el indicador de sección activa.
+Las rutas deben conservar su escritura exacta, incluida la carpeta `Js`, para funcionar al publicar.
 
-## Cómo trabajaremos
+## Cómo visualizar la página
 
-1. Acordar la estructura y los lugares donde cada integrante incorporará su contenido.
-2. Crear una rama propia por integrante y trabajar en paralelo.
-3. Realizar commits descriptivos y subir los cambios al repositorio.
-4. Abrir Pull Requests, revisar los aportes y resolver los conflictos antes de integrar.
-5. Conservar en el historial la evidencia del trabajo con ramas no lineales.
-6. Revisar la página completa, publicar en GitHub Pages y actualizar el enlace de entrega.
+1. Descargar o clonar el repositorio.
+2. Abrir `index.html` en un navegador, o abrir la carpeta en Visual Studio Code y utilizar Live Server.
+3. Recorrer las secciones desde la navegación superior o el footer.
 
-Ramas sugeridas: `introduccion-identificacion`, `versiones-cambios` y `auditoria-reporte`.
+Para comprobar el menú móvil, reducir el ancho del navegador o utilizar la vista de dispositivos de sus herramientas de desarrollo.
 
-## Cómo visualizar el proyecto
+## Trabajo colaborativo
 
-Descargar o clonar el repositorio y abrir `index.html` en un navegador. La navegación enlaza las secciones `#introduccion`, `#versiones` y `#auditoria`. El ejemplo de biblioteca es ilustrativo. La sección de Andrea está integrada; la sección de Dubenny está pendiente. El menú móvil y el seguimiento de la sección activa se ejecutan desde `Js/script.js`.
+Cada integrante trabaja en su rama, registra sus aportes con commits descriptivos y los sube al repositorio. Los cambios se revisan e integran mediante Pull Requests hacia `main`, resolviendo los conflictos y conservando los aportes del equipo.
 
-## Publicación
+- Luis: `introduccion-identificacion`.
+- Andrea: `versiones-cambios`.
+- Dubenny: `auditoria-reporte` (rama prevista).
 
-**GitHub Pages:** pendiente de configurar al finalizar la página.
+El historial conserva las ramas y merges como evidencia del trabajo no lineal. Antes de integrar una nueva entrega se revisan el contenido, las rutas y el funcionamiento de la página.
 
-## Revisión antes de entregar
+## Repositorio y publicación
 
-- [ ] Cubrir las cinco tareas de ACS con ejemplos y palabras propias.
-- [ ] Incluir introducción, conclusión y referencia bibliográfica completa.
-- [ ] Comprobar que la página se lea bien en computadora y celular.
-- [ ] Verificar las ramas, commits y contribuciones de los tres integrantes.
-- [ ] Completar el README con la participación realizada.
-- [ ] Publicar en GitHub Pages y añadir el enlace.
+- [Repositorio en GitHub](https://github.com/luisbravobello/proyecto-acs).
+- **Página en GitHub Pages:** enlace pendiente de confirmar y añadir al README.
 
-## Entrega
+## Pendientes antes de la entrega
 
-Repositorio de GitHub, página publicada en GitHub Pages y README completo.
+- [ ] Incorporar el diagrama de control de cambio de Andrea.
+- [ ] Integrar auditoría, reporte de estado y conclusión de Dubenny.
+- [ ] Completar las referencias con las páginas utilizadas por cada integrante.
+- [ ] Revisar la versión final en computadora y celular.
+- [ ] Verificar los aportes de los tres integrantes en el historial.
+- [ ] Confirmar la publicación en GitHub Pages y añadir el enlace.
 
-## Material de referencia
+## Referencia bibliográfica
 
-- Consigna: *Tarea ASC Control de Version.docx*.
-- Extracto de Pressman: *Resumen par manana scm.pdf*, sección 22.3, páginas 508 a 515.
-- Pressman, R. S. (2010). *Ingeniería del software: Un enfoque práctico* (7.ª ed.). McGraw-Hill Interamericana Editores. Sección 22.3, pp. 508–515; línea de referencia, p. 504.
+Pressman, R. S. (2010). *Ingeniería del software: Un enfoque práctico* (7.ª ed.). McGraw-Hill Interamericana Editores. Sección 22.3, pp. 508–515; línea de referencia, p. 504.
 
+Material de la actividad: *Tarea ASC Control de Version.docx* y el extracto *Resumen par manana scm.pdf*.
