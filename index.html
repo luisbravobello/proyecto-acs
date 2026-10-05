@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Administración de la Configuración del Software</title>
   <link rel="stylesheet" href="assets/style.css">
+  <script src="Js/script.js" defer></script>
 </head>
 <body id="inicio">
   <header class="barra-navegacion">
     <nav aria-label="Secciones del trabajo">
       <a class="logo" href="#inicio" aria-label="ACS, inicio">ACS.</a>
-      <div class="nav-secciones">
+      <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path class="menu-lineas" d="M4 6h16M4 12h16M4 18h16"/><path class="menu-cerrar" d="m6 6 12 12M18 6 6 18"/></svg>
+      </button>
+      <div class="nav-secciones" id="menu-principal">
         <a href="#introduccion"><span>01</span> Introducción e identificación</a>
         <a href="#versiones"><span>02</span> Versión y cambio</a>
         <a href="#auditoria"><span>03</span> Auditoría y reporte</a>
@@ -359,7 +363,7 @@
         </p>
         <p>
           Para proteger el trabajo en equipo, el SVC aísla a los desarrolladores asignando directorios separados y 
-          <strong>mezcla automáticamente los cambios</strong> al completar cada tarea. 
+          <strong>combina los cambios compatibles</strong> al integrar el trabajo. Si existen modificaciones incompatibles, se producen conflictos que los desarrolladores deben resolver antes de completar la integración.
           <em>Nota importante:</em> El SVC no es un sistema de construcción ni implementa por sí solo un proceso formal de control de cambios; 
           necesita integrarse con herramientas externas como <code>Makefile</code>.
         </p>
