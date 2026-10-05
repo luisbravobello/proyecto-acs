@@ -51,6 +51,7 @@ El resumen tendrá al menos una página de contenido y estará redactado con pal
 
 - HTML para la estructura y el contenido.
 - CSS para el diseño.
+- JavaScript para el menú móvil y la sección activa.
 - Git y GitHub para el control de versiones y el trabajo colaborativo.
 - GitHub Pages para publicar la página.
 
@@ -60,11 +61,15 @@ El resumen tendrá al menos una página de contenido y estará redactado con pal
 proyecto-acs/
 ├── index.html
 ├── README.md
-└── assets/
-    └── style.css
+├── assets/
+│   └── style.css
+├── Js/
+│   └── script.js
+└── img/
+    └── pressman-portada.png
 ```
 
-`index.html` contiene la sección de introducción e identificación de Luis, su ejemplo de biblioteca y los espacios reservados para Andrea y Dubenny. `assets/style.css` contiene el diseño compartido y la adaptación a computadora y celular. Andrea y Dubenny desarrollarán e incorporarán sus propios apartados en sus ramas.
+`index.html` contiene la introducción e identificación de Luis, el contenido de Andrea y el espacio reservado para Dubenny. `assets/style.css` contiene el diseño compartido y la adaptación a computadora y celular. `Js/script.js` implementa el menú móvil y el indicador de sección activa.
 
 ## Cómo trabajaremos
 
@@ -79,7 +84,7 @@ Ramas sugeridas: `introduccion-identificacion`, `versiones-cambios` y `auditoria
 
 ## Cómo visualizar el proyecto
 
-Descargar o clonar el repositorio y abrir `index.html` en un navegador. La navegación enlaza las secciones `#introduccion`, `#versiones` y `#auditoria`. El ejemplo de biblioteca es ilustrativo. Las secciones de Andrea y Dubenny están pendientes de sus aportes.
+Descargar o clonar el repositorio y abrir `index.html` en un navegador. La navegación enlaza las secciones `#introduccion`, `#versiones` y `#auditoria`. El ejemplo de biblioteca es ilustrativo. La sección de Andrea está integrada; la sección de Dubenny está pendiente. El menú móvil y el seguimiento de la sección activa se ejecutan desde `Js/script.js`.
 
 ## Publicación
 
