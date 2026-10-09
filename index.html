@@ -516,6 +516,39 @@
     <section id="auditoria">
       <span>03 · DUBENNY ARECHE</span>
       <h2>Auditoría y reporte de estado</h2>
+
+      <p>
+        La identificación, el control de versión y el control de cambio son tareas fundamentales para ordenar el trabajo, pero por sí solas solo rastrean las modificaciones hasta que se genera la orden de cambio de ingeniería (OCI). Falta asegurar que el cambio se implementó correctamente; para eso existen la revisión técnica y la auditoría de configuración.
+      </p>
+
+      <h3>Revisión técnica vs. auditoría de configuración</h3>
+
+      <div class="tarjetas">
+        <article>
+          <h4>Revisión técnica</h4>
+          <p>
+            Se enfoca en la exactitud técnica del ítem modificado. Los revisores evalúan su consistencia con otros objetos de configuración, buscan posibles omisiones y analizan si el cambio puede tener efectos colaterales indeseados. Salvo en modificaciones extremadamente triviales, debe realizarse para todos los cambios.
+          </p>
+        </article>
+
+        <article>
+          <h4>Auditoría de configuración</h4>
+          <p>
+            Complementa la revisión técnica evaluando características que esta normalmente no considera. Si la ACS es una actividad formal, el grupo de aseguramiento de la calidad la realiza por separado. Verifica que las versiones correctas de los ítems entren en una construcción específica y que la documentación sea consistente con lo construido.
+          </p>
+        </article>
+      </div>
+
+      <h3>Las seis preguntas de la auditoría</h3>
+      
+      <ol>
+        <li><strong>¿Se hizo el cambio especificado en la OCI y no se agregaron modificaciones extra?</strong> Se verifica que la implementación se limite estrictamente a lo solicitado.</li>
+        <li><strong>¿Se realizó la revisión técnica para valorar la exactitud?</strong> Se comprueba que el cambio haya pasado por una evaluación técnica formal y rigurosa.</li>
+        <li><strong>¿Se siguió el proceso de software y se aplicaron los estándares de ingeniería de software?</strong> Asegura que el desarrollo cumpla con las normativas metodológicas y de calidad del proyecto.</li>
+        <li><strong>¿Se resaltó el cambio en el ICS, con fecha y autor, y los atributos del objeto reflejan el cambio?</strong> Se garantiza la trazabilidad registrando quién hizo la modificación y cuándo se efectuó.</li>
+        <li><strong>¿Se siguieron los procedimientos ACS para anotar, registrar y reportar el cambio?</strong> Confirma que toda la documentación administrativa correspondiente ha sido completada apropiadamente.</li>
+        <li><strong>¿Se actualizaron correctamente los ICS relacionados?</strong> Garantiza que cualquier otro componente o documento afectado por el cambio principal también haya sido modificado.</li>
+      </ol>
       <!-- Dubenny incorporará aquí su contenido y la conclusión del trabajo. -->
     </section>
 
