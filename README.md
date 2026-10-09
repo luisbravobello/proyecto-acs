@@ -12,7 +12,7 @@ Explicar con palabras propias los conceptos de la sección 22.3 de *Ingeniería 
 |---|---|---|
 | Luis Alejandro Bravo Bello | Introducción, cuatro objetivos, cinco tareas, identificación de ítems y objetos, características, relaciones, línea de referencia y ejemplo con requisitos, código y pruebas. Estructura HTML, navegación y funcionalidades JavaScript. | Contenido y funcionalidades incorporados. |
 | Andrea Valecillos | Repositorio, versiones, construcción, rastreo de errores, conjuntos de cambios, modelo del sistema y SVC/CVS. Control de cambio, ACC, OCI, acceso, sincronización, niveles de control, ejemplo y estilos CSS. | Contenido, ejemplo y estilos incorporados. Diagrama del proceso pendiente. |
-| Dubenny Areche | Revisión técnica y auditoría, seis preguntas de auditoría, reporte de estado y ejemplo. Conclusión, revisión final del README y publicación en GitHub Pages. | Apartado reservado; contenido y conclusión pendientes. |
+| Dubenny Areche | Revisión técnica y auditoría, seis preguntas de auditoría, reporte de estado y ejemplo. Conclusión, revisión final del README y publicación en GitHub Pages. | Contenido, conclusión y README incorporados. |
 
 Lecturas asignadas: Luis, desde 22.3 hasta antes de 22.3.2 (pp. 508–510); Andrea, 22.3.2 y 22.3.3 (pp. 510–513); Dubenny, 22.3.4 y 22.3.5 (pp. 514–515).
 
@@ -21,6 +21,7 @@ Lecturas asignadas: Luis, desde 22.3 hasta antes de 22.3.2 (pp. 508–510); Andr
 - **Introducción e identificación:** `#introduccion`.
 - **Control de versión y cambio:** `#versiones`.
 - **Auditoría y reporte de estado:** `#auditoria`.
+- **Conclusión:** `#conclusion`.
 - Referencia bibliográfica con la portada del libro.
 - Footer con enlaces a las secciones, integrantes y repositorio.
 
@@ -71,26 +72,26 @@ Cada integrante trabaja en su rama, registra sus aportes con commits descriptivo
 
 - Luis: `introduccion-identificacion`.
 - Andrea: `versiones-cambios`.
-- Dubenny: `auditoria-reporte` (rama prevista).
+- Dubenny: `auditoria-reporte`.
 
 El historial conserva las ramas y merges como evidencia del trabajo no lineal. Antes de integrar una nueva entrega se revisan el contenido, las rutas y el funcionamiento de la página.
 
 ## Repositorio y publicación
 
 - [Repositorio en GitHub](https://github.com/luisbravobello/proyecto-acs).
-- **Página en GitHub Pages:** enlace pendiente de confirmar y añadir al README.
+- **Página en GitHub Pages:** [https://luisbravobello.github.io/proyecto-acs/](https://luisbravobello.github.io/proyecto-acs/)
 
 ## Pendientes antes de la entrega
 
 - [ ] Incorporar el diagrama de control de cambio de Andrea.
-- [ ] Integrar auditoría, reporte de estado y conclusión de Dubenny.
-- [ ] Completar las referencias con las páginas utilizadas por cada integrante.
+- [x] Integrar auditoría, reporte de estado y conclusión de Dubenny.
+- [x] Completar las referencias con las páginas utilizadas por cada integrante.
 - [ ] Revisar la versión final en computadora y celular.
 - [ ] Verificar los aportes de los tres integrantes en el historial.
-- [ ] Confirmar la publicación en GitHub Pages y añadir el enlace.
+- [x] Confirmar la publicación en GitHub Pages y añadir el enlace.
 
 ## Referencia bibliográfica
 
-Pressman, R. S. (2010). *Ingeniería del software: Un enfoque práctico* (7.ª ed.). McGraw-Hill Interamericana Editores. Sección 22.3, pp. 508–515; línea de referencia, p. 504.
+Pressman, R. S. (2010). *Ingeniería del software: Un enfoque práctico* (7.ª ed.). McGraw-Hill Interamericana Editores. Sección 22.3, pp. 508–515; línea de referencia, p. 504; auditoría y reporte de estado, pp. 514–515.
 
 Material de la actividad: *Tarea ASC Control de Version.docx* y el extracto *Resumen par manana scm.pdf*.
