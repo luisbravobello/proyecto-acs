@@ -374,9 +374,15 @@
           diferencias entre versiones sucesivas.
         </p>
         <p>
-          Cada desarrollador trabaja en su propio directorio, y el SVC mezcla los cambios
-          cuando cada uno termina. No construye versiones ni implementa un proceso de
-          control de cambio: necesita herramientas como <code>Makefile</code>.
+          Cada desarrollador trabaja en su propio directorio. El SVC combina los cambios
+          compatibles; cuando hay modificaciones incompatibles, los desarrolladores deben
+          resolver los conflictos antes de completar la integración.
+        </p>
+        <p>
+          SVC/CVS no construye por sí solo una versión del software: puede integrarse con
+          herramientas de construcción como <code>Makefile</code>. Tampoco implementa por
+          sí solo un proceso de control de cambio; las solicitudes, aprobaciones y el
+          seguimiento de errores requieren procedimientos y herramientas complementarios.
         </p>
       </div>
 
@@ -411,7 +417,7 @@
             </span>
             <div>
               <h4>Aprobación</h4>
-              <p>Con un reporte de cambio, la autoridad de control de cambio (ACC) decide el estatus y la prioridad. Si aprueba, se emite una orden de cambio de ingeniería (OCI).</p>
+              <p>Con un reporte de cambio, la autoridad de control de cambio (ACC) decide el estatus y la prioridad. Si aprueba, se emite una orden de cambio de ingeniería (OCI), que describe el cambio autorizado, las restricciones que deben respetarse y los criterios de revisión y auditoría.</p>
             </div>
           </li>
           <li>
@@ -585,6 +591,7 @@
       </p>
 
       <h3>Ejemplo: cambios del equipo</h3>
+      <p>La siguiente tabla simula un reporte de estado. Las fechas son ilustrativas y no sustituyen el historial real de commits y Pull Requests del repositorio.</p>
 
       <div class="ejemplo">
         <div class="contenedor-tabla">
@@ -627,7 +634,7 @@
         </div>
 
         <p>
-          Aplicando las preguntas de auditoría al ajuste de style.css para celulares: se confirmó que se hizo solo lo pedido en la OCI, el equipo llevó a cabo una revisión técnica, el cambio quedó registrado debidamente en un commit con el autor y la fecha, y por último, se verificó cuidadosamente que no se rompieran las otras secciones.
+          En este ejemplo, la auditoría del ajuste de <code>style.css</code> comprobaría que la modificación corresponda a la OCI, que exista una revisión técnica y que el commit identifique al autor y la fecha. También verificaría que las demás secciones funcionen correctamente. En un reporte real, cada resultado debe estar respaldado por sus evidencias.
         </p>
       </div>
     </section>
@@ -655,6 +662,7 @@
       </p>
       <small>
         Introducción e identificación: pp. 508–510.
+        Control de versión y cambio: pp. 510–513.
         Línea de referencia: p. 504.
         Auditoría y reporte de estado: pp. 514–515.
       </small>
