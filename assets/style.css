@@ -999,3 +999,44 @@ button:focus-visible { outline: 3px solid var(--azul); outline-offset: 4px; }
   .nav-secciones a.enlace-activo { background: #edf0ff; border-radius: 6px; }
 }
 
+
+/* ---------- 13. Tabla REC (Dubenny) ---------- */
+.tarjetas.cuatro {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.contenedor-tabla {
+  overflow-x: auto;
+  margin-block: 20px;
+}
+
+.tabla-rec {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: .9rem;
+}
+
+.tabla-rec th {
+  padding: 12px;
+  border-bottom: 2px solid var(--azul);
+  color: var(--texto);
+}
+
+.tabla-rec td {
+  padding: 12px;
+  border-bottom: 1px solid var(--borde);
+  color: var(--suave);
+}
+
+@media (max-width: 900px) {
+  .tarjetas.cuatro {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .tarjetas.cuatro {
+    grid-template-columns: 1fr;
+  }
+}

@@ -549,6 +549,86 @@
         <li><strong>¿Se siguieron los procedimientos ACS para anotar, registrar y reportar el cambio?</strong> Confirma que toda la documentación administrativa correspondiente ha sido completada apropiadamente.</li>
         <li><strong>¿Se actualizaron correctamente los ICS relacionados?</strong> Garantiza que cualquier otro componente o documento afectado por el cambio principal también haya sido modificado.</li>
       </ol>
+      <h3>Reporte de estado de la configuración (REC)</h3>
+
+      <p>También conocido como contabilidad de estado, el REC tiene como objetivo registrar y comunicar toda la actividad relacionada con los cambios. Responde a cuatro preguntas clave:</p>
+
+      <div class="tarjetas cuatro">
+        <article>
+          <h4>¿Qué ocurrió?</h4>
+          <p>Describe la modificación exacta que se llevó a cabo.</p>
+        </article>
+        <article>
+          <h4>¿Quién lo hizo?</h4>
+          <p>Identifica al autor o responsable del cambio.</p>
+        </article>
+        <article>
+          <h4>¿Cuándo ocurrió?</h4>
+          <p>Registra la fecha y momento exacto de la acción.</p>
+        </article>
+        <article>
+          <h4>¿Qué más se afectará?</h4>
+          <p>Señala los componentes adicionales impactados.</p>
+        </article>
+      </div>
+
+      <p>Se crea una entrada en el REC cuando ocurre alguna de las siguientes situaciones:</p>
+      <ul>
+        <li>Cuando a un ICS se le asigna una nueva identificación o se actualiza.</li>
+        <li>Cuando la ACC aprueba un cambio y se emite una OCI.</li>
+        <li>Cuando se realiza una auditoría de configuración y sus resultados se reportan en el REC.</li>
+      </ul>
+
+      <p>
+        La salida del REC puede publicarse en una base de datos en línea o en un sitio web, para que desarrolladores y personal de apoyo consulten los cambios por palabras clave. Además, se genera un reporte periódico para mantener informados a los gerentes y profesionales. Como aconseja el libro, es buena práctica mantener una lista de «se necesita saber» por objeto de configuración y notificar a todas las partes involucradas cuando haya un cambio.
+      </p>
+
+      <h3>Ejemplo: cambios del equipo</h3>
+
+      <div class="ejemplo">
+        <div class="contenedor-tabla">
+          <table class="tabla-rec">
+            <thead>
+              <tr>
+                <th>Qué ocurrió</th>
+                <th>Quién</th>
+                <th>Cuándo</th>
+                <th>Qué más se afecta</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Incorporación de introducción e identificación (rama introduccion-identificacion)</td>
+                <td>Luis</td>
+                <td>2026-10-04</td>
+                <td>Menú de navegación y bibliografía.</td>
+              </tr>
+              <tr>
+                <td>Incorporación de control de versión y de cambio (rama versiones-cambios)</td>
+                <td>Andrea</td>
+                <td>2026-10-04</td>
+                <td>Estilos CSS y diagrama del proceso.</td>
+              </tr>
+              <tr>
+                <td>Ajuste de assets/style.css para celulares</td>
+                <td>Andrea</td>
+                <td>2026-10-06</td>
+                <td>Visualización de las tres secciones.</td>
+              </tr>
+              <tr>
+                <td>Incorporación de auditoría, reporte de estado y conclusión (rama auditoria-reporte)</td>
+                <td>Dubenny</td>
+                <td>2026-10-08</td>
+                <td>README y referencia bibliográfica.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          Aplicando las preguntas de auditoría al ajuste de style.css para celulares: se confirmó que se hizo solo lo pedido en la OCI, el equipo llevó a cabo una revisión técnica, el cambio quedó registrado debidamente en un commit con el autor y la fecha, y por último, se verificó cuidadosamente que no se rompieran las otras secciones.
+        </p>
+      </div>
       <!-- Dubenny incorporará aquí su contenido y la conclusión del trabajo. -->
     </section>
 
